@@ -1,7 +1,6 @@
 import java.util.NoSuchElementException;
 import java.util.PriorityQueue;
 
-import org.jetbrains.annotations.NotNull;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -25,7 +24,7 @@ public class PriorityQueueTest {
 
     @ParameterizedTest(name="#{index} - Test with Argument={0},{1}")
     @MethodSource("stringIntAndListProvider")
-    public void PriorityQueue_RunTest(int @NotNull [] random_array, int[] correct_array){
+    public void PriorityQueue_RunTest(int[] random_array, int[] correct_array){
         PriorityQueue<Integer> test = new PriorityQueue<Integer>();
         int index = 0;
         Integer s = 0;
